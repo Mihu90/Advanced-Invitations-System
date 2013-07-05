@@ -13,9 +13,6 @@ It can work in two different modes on registation process : "Disabled" when you 
 
 Credits allows members to generate keys that are going to be used for other users to register. These credits can be earned for free with four different methods: Reputation, Posts, Days since registration or Voting. (you set how many credits are given for each new post / new thread, reputation given). Moreover, an user can buy keys using Paypal or Fortumo.
 
-**Web Site**: http://www.simblog.org
-**FreeCode**: https://freecode.com/projects/simblog
-
 ####Features
 * Custom email subject.
 * Custom email body.
@@ -37,5 +34,5 @@ Credits allows members to generate keys that are going to be used for other user
 * Option to show on profile number of members that were invited by someone.
 * Some useful stats about system on Admin Control Panel.
 * Amount of credits for an user can be changed in Admin CP too.
-and much more...
+* and much more...
 
