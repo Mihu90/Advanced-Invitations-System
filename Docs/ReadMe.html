@@ -1,0 +1,344 @@
+<html>
+  <head>
+	<style type="text/css">
+	.body {      
+		background : #fff;
+		font-size: 12px;
+		font-family: Sans-Serif;
+		line-height: 1.5;
+	}
+	
+	a:link {
+		color: #026CB1;
+		text-decoration: none;
+	}
+	
+	a:visited {
+		color: #026CB1;
+		text-decoration: none;
+	}
+	
+	a:hover, a:active {
+		color: #000;
+		text-decoration: underline;
+	}
+	
+	.header {
+		background: #efefef;
+		height: 50px;
+		color: #016CB0;
+		text-align: center;
+		font-size: 35px;
+		font-weight: bold;
+		font-family: Arial Black;
+		text-shadow: 1px 1px #000;
+		border-top: 1px solid #D4D4D4;
+		border-right: 1px solid #D4D4D4;
+		border-left: 1px solid #D4D4D4;
+		margin: 20px 20px 0px 20px;
+	}
+
+	.metoda {
+		font-weight: bold;
+	}
+
+	.desc {
+		font-style: italic;
+	}
+
+	.header a:hover, a:active {
+		color: #016CB0;
+		text-shadow: 1px 1px #000;
+		text-decoration: none;
+	}
+
+	.container {
+		background: #fff;
+		color: #000;
+		text-align: left;
+		border-right: 1px solid #D4D4D4;
+		border-left: 1px solid #D4D4D4;
+		border-bottom: 1px solid #D4D4D4;
+		margin: 0px 20px 0px 20px;
+		padding: 20px;
+	}
+	
+	.thead {
+		background: #2F5E9E url(./images/bg.png) repeat-x;
+		color: #fff;
+		font-weight: bold;
+		border: 1px solid #345B94;      
+		padding: 5px;
+	}
+	
+	.trow1 {
+		background: #F5F5F5;
+		border-bottom: 1px solid #0F5C8E;
+		border-right: 1px solid #0F5C8E;
+		border-left: 1px solid #0F5C8E;
+		padding: 10px;
+	}
+	
+	.trow2 {
+		background: #EFEFEF;
+		border-bottom: 1px solid #0F5C8E;
+		border-right: 1px solid #0F5C8E;
+		border-left: 1px solid #0F5C8E;
+		padding: 10px;
+	}
+	
+	.notice {
+		background: #FFF6BF;
+		border-bottom: 2px solid #FFD324;
+		border-top: 2px solid #FFD324;
+		margin: 10px auto;
+		padding: 5px 20px;
+		text-align: center;
+	}
+	</style>
+  </head>
+	<title>Advanced Invitations System</title>
+	<body class="body">
+	<div class="header">
+	  <a href="http://mybb.ro/">Advanced Invitations System</a>
+	</div>
+	<div class="container">
+	<div class="notice">
+		<b>Current Version : 1.1.1</b>
+	</div>
+	  <a name="top"></a>
+	  <div class="thead">
+		Contents
+	  </div>
+	  <div class="trow1">
+		<ol>
+		  <li><a style="text-decoration: none;" href="#cerinte">Requirements</a></li>
+		  <li><a style="text-decoration: none;" href="#descriere">Description</a></li>
+		  <li><a style="text-decoration: none;" href="#caracteristici">Features</a></li>
+		  <li><a style="text-decoration: none;" href="#tutoriale">Video tutorials</a></li>
+		  <li><a style="text-decoration: none;" href="#instalare">Installation</a></li>
+		  <li><a style="text-decoration: none;" href="#actualizare">Upgrade</a></li>
+		  <li><a style="text-decoration: none;" href="#schimbari">Changelog</a></li>
+		  <li><a style="text-decoration: none;" href="#drepturi_de_autor">Copyright</a></li>
+		</ol>
+	  </div>
+	  <br />
+	  <a name="cerinte"></a>
+	  <div class="thead">
+		Requirements
+	  </div>
+	  <div class="trow2">
+		<ul>
+          		<li>at least MyBB 1.6.0</li>
+		  	<li>PHP 5.2.0 or greater</li>
+		  	<li>MySQL as database </li>
+        	</ul>
+	  </div>
+	  <br />
+	  <a name="descriere"></a>
+	  <div class="thead">
+		Description
+	  </div>
+	  <div class="trow1">
+		This modification is an <i>advanced invitations system fully integrated with MyBB</i>. 
+		Based on a credit system and with a lot of powerful features this is the ultimate way to get more users in your forum. 
+	  </div>  
+	  <br />
+	  <a name="caracteristici"></a>
+	  <div class="thead">
+		Features
+	  </div>
+	  <div class="trow2">
+		<ul>
+			<li><b>Credits</b></li>
+				<ul>
+					<li>Give credits based on: Reputation, Posts, Days since registration, Activity on board.</li>
+					<li>Users can buy credits using Paypal or SMS - Fortumo.</li>
+					<li>Users can donate credits to other users.</li>
+					<li>Amount of credits to receive depending on method.</li>
+					<li>Max credits that regular users can have.</li>
+					<li>Allow users to have unlimitied credits.</li>
+				</ul>
+			<li><b>Emails</b></li>
+				<ul>
+					<li>Custom email subject.</li>
+					<li>Custom email body.</li>
+					<li>Commands like {INVITATION_CODE}, {REGISTRATION_URL} and much more.</li>
+					<li>Interpreted email body (using MyCode).</li>
+				</ul>
+			<li><b>Keys</b></li>
+				<ul>
+					<li>Force key, optional key or disabled keys on registration.</li>
+					<li>Keys are generated with an unique ID can't be copied.</li>
+					<li>Days while keys are valid. (Default : 7)</li>
+					<li>Option to add credits for expired keys.</li>
+					<li>Option to resend an invitation after a period of time.</li>
+				</ul>
+			<li><b>Permissions</b></li>
+				<ul>
+					<li>Permissions for invitations and unlimited credits.</li>
+				</ul>
+			<li><b>Stats</b></li>
+				<ul>
+					<li>Some stats about plugin can be found on "Forum Statistics" page.</li>
+					<li>Top invitees on Admin CP.</li>
+				</ul>
+			<li><b>Others</b></li>
+				<ul>
+					<li>Give additional credits to specific members using Admin CP.</li>
+					<li>Administrators can reset users number of invitations.</b>
+					<li>Option to show number of members invited on profile.</li>
+					<li>Invitations logger.</li>
+					<li>If a guest enter on registration process an wrong invitation code, several times, then he is banned for a while.</li>
+				</ul>
+		<ul>
+	  </div>    
+	  <br />
+	  <a name="tutoriale"></a>
+	  <div class="thead">
+		Video tutorials
+	  </div>
+	  <div class="trow1">
+		<table width="100%">
+		<tr>
+		<td width="50%" align="center"><b>How to add new rules for adding invitations to users</b></td>
+		<td width="50%" align="center"><b>How to enable and use SMS payment with AIS</b></td>
+		</tr>
+		<tr>
+		<td width="50%" align="center">
+                <iframe src="http://player.vimeo.com/video/37623967" width="400" height="230" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+		</td>
+		<td width="50%" align="center">
+		<iframe src="http://player.vimeo.com/video/37468076" width="400" height="230" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+		</td>
+		</tr></table>
+	  </div>      
+	  <br />
+	  <a name="instalare"></a>
+	  <div class="thead">
+		Installation
+	  </div>
+	  <div class="trow1">
+		You can install this plugin by doing the following steps :
+		<ol>
+		  	<li>Upload the contents of the <em>Upload</em> folder to the root of your MyBB installation directory.</li>
+		  	<li>Then, install and activate <em>Advanced Invitations System</em> from the Administrator Panel, section Plugins.</li>
+		  	<li>Now you can start to configure it! (<em>Administrator Panel > Configuration > Settings > Advanced Invitations System</em>)</li>
+		</ol>
+	  </div>        
+	  <br />
+	  <a name="actualizare"></a>
+	  <div class="thead">
+		Upgrade
+	  </div>
+	  <div class="trow2">
+		<ol>
+			<li>Upload the contents of the <em>"Upload"</em> folder to the root of your MyBB installation and overwrite all files, except <b>system_version.php</b> which can be found on <b>inc/plugins/advinvsys</b> directory.</li>
+			<li>Go to <em>Administrator Panel > Configuration > Advanced Invitations System > Modules</em> section and click on "Run" to the next version that you want to do the upgrade.</li>
+			<li>The upgrade process has done successfully.</li>
+		</ol>
+	  </div>
+	  <br />
+	<a name="dezvoltare"></a>
+	  <div class="thead">
+		Development
+	  </div>
+	  <div class="trow2">
+		This application let you to make plugins for it. There is a class called <b>AISDevelop</b>, which can be found in <b>inc/plugins/advinvsys/classes/class_develop.php</b> file, who has a set of methods to help developers with development. Moreover, <em>Advanced Invitations System</em> comes with a <em>Hello World</em> plugin based off MyBB's one.<br><br>
+<b>Some methods that you can use in order to write your own plugin for AIS :</b>
+		<ul>
+			<li class="metoda">addSettings($module, $settings)</li>
+			<ul>
+				<li class="desc">Adds new settings</li>
+				<li><font color='green'>@param</font> string : the codename of module which owns the setting(s)</li>
+        			<li><font color='green'>@param</font> array : the setting(s) (Include : the name (unique identifier) of the setting, the title of the setting, the description of the setting, the type of the setting ('text', 'textarea', etc...) and the value of the setting.)</li>
+        			<li><font color='blue'>@return</font> bool : false if something went wrong</li>
+			</ul>
+			<li class="metoda">removeSettings($module, $settings = false)</li>
+			<ul>
+				<li class="desc">Deletes settings from the database</li>
+				<li><font color='green'>@param</font> string : the codename of module which owns the setting(s)</li>
+        			<li><font color='green'>@param</font> mixed : string - list of settings seperated by ',' e.g. 'test','module' , false - if you want to delete all settings from the module specified</li>
+        			<li><font color='blue'>@return</font> bool : false if something went wrong</li>
+			</ul>
+			<li class="metoda">addLog($type, $data, $user = 1, $now = false)</li>
+			<ul>
+				<li class="desc">Create a new log entry</li>
+				<li><font color='green'>@param</font> string : type of action taken</li>
+        			<li><font color='green'>@param</font> string : extra data</li>
+				<li><font color='green'>@param</font> int : uid of who's executed the action</li>
+        			<li><font color='green'>@param</font> bool : if it is set to "true" then the log will be insert immediatly, else will be insert later</li>
+        			<li><font color='blue'>@return</font> mixed : false if something went wrong or log id if everything it is OK!</li>
+			</ul>
+			<li class="metoda">removeLog($ids = array())</li>
+			<ul>
+				<li class="desc">Removes all log entries based on ids</li>
+				<li><font color='green'>@param</font> array : list with log ids</li>
+        			<li><font color='blue'>@return</font> bool : false if something went wrong</li>
+			</ul>
+			<li class="metoda">addInvitations($type, $value, $number, $reset = false, $log = true, $now = false)</li>
+			<ul>
+				<li class="desc">Give or take user invites</li>
+				<li><font color='green'>@param</font> string : user identifier column (can be 'uid' or 'username')</li>
+        			<li><font color='green'>@param</font> mixed : user identifier value (if user identifier column is 'uid' then here you must add an user id, else you need to add a string, who will represent an username)</li>
+				<li><font color='green'>@param</font> int : the number of invitations that will be given or taken</li>
+        			<li><font color='green'>@param</font> bool : true if you would like to reset the number of invitations to the given value (user identifier value)</li>
+				<li><font color='green'>@param</font> bool : are we going to add a log?</li>
+        			<li><font color='green'>@param</font> bool : if it is set to true then update will be maked immediatly, else after a period of time</li>
+        			<li><font color='blue'>@return</font> bool : true if everything was fine or false if an error has occured</li>
+			</ul>
+			<li class="metoda">checkInvitations($type, $value, $amount)</li>
+			<ul>
+				<li class="desc">Check if an user has a certain number of invites</li>
+				<li><font color='green'>@param</font> string : user identifier column (can be 'uid' or 'username')</li>
+        			<li><font color='green'>@param</font> mixed : user identifier value (if user identifier column is 'uid' then here you must add an user id, else you need to add a string, who will represent an username)</li>
+				<li><font color='green'>@param</font> int : the number of invitations that will be checked</li>
+        			<li><font color='blue'>@return</font> mixed : false if it has not enough invitations or current number of invites if it has enough</li>
+			</ul>
+			<li class="metoda">sendPM($pm, $fromid = 0)</li>
+			<ul>
+				<li class="desc">Sends a PM to a user</li>
+				<li><font color='green'>@param</font> array: The PM to be sent; should have 'subject', 'message', 'touid' and 'receivepms' (receivepms is for admin override in case the user has disabled pm's)</li>
+        			<li><font color='green'>@param</font> int : from user id (0 if you want to use the uid of the person that sends it. -1 to use MyBB Engine</li>
+        			<li><font color='blue'>@return</font> bool : true if PM was sent</li>
+			</ul>
+		</ul>
+		and much more...
+	  </div>
+	  <br />
+	  <a name="schimbari"></a>
+	  <div class="thead">
+		Changelog
+	  </div>
+	  <div class="trow2">
+              	<ul>
+			<li><b>[08.08.2012][v1.1.1]</b></li>
+			<ul>
+				<li><font color="red">[Bugfix]</font> Because a setting was missing, NewPoints gateway didn`t work;</li>
+			</ul>
+			<li><b>[20.05.2012][v1.1.0]</b></li>
+			<ul>
+				<li><font color="green">[Feature]</font> Now it's possible to disable the email invitation, and have them generated in the User CP without sending email (Thanks to Storage);</li>
+				<li><font color="green">[Feature]</font> New stats added to Forum Statistics webpage;</li>
+				<li><font color="green">[Feature]</font> Now each user can have a real number of invitations;</li>
+				<li><font color="red">[Bugfix]</font> Some little problems were solved;</li>
+				<li><font color="blue">[Structure]</font> Now we make a class called AISDevelop, who has a set of methods to help developers with development;</li>
+				<li><font color="blue">[Structure]</font> New hooks were added;</li>
+			</ul>
+			<li><b>[15.03.2012][v1.0.0]</b></li>
+			<ul>
+				<li>First stable release;</li>
+			</ul>
+		</ul>
+	  </div>
+	  <br />
+	  <a name="drepturi_de_autor"></a>
+	  <div class="thead">
+		Copyright
+	  </div>
+	  <div class="trow2">
+		Copyright &copy; <a href="http://mybb.ro/">MyBB Rom&#226;nia</a> 2010-2012. All rights reserved.
+	  </div>	  
+	</div> 
+	</body>
+</html>

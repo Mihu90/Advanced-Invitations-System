@@ -1,0 +1,73 @@
+.border_wrapper {
+    border: 1px solid #0F5C8E;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 14px;
+}
+
+*.align_center, table.general th.align_center, input.align_center {
+    text-align: center;
+}
+
+* html .border_wrapper {
+    height: 1px;	
+}
+
+.border_wrapper div.title {
+    background: #026CB1 url(images/thead_bg.gif) top left repeat-x;
+    color: #fff;
+    padding: 4px 4px;
+    font-size: 100%;
+    text-align: left;
+    font-weight: bold;
+}
+
+.border_wrapper div.title a {
+    color: #fff;
+    text-decoration: none;
+}
+
+table.general {
+    background: #ccc;
+    width: 100%;
+}
+
+table.general td {
+    border-top: 1px solid #fafafa;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #fafafa;
+}
+
+table.bottom_cell_border td {
+    border-right: 0;
+    border-left: 0;
+}
+
+
+table.general td {
+    background: #f5f5f5;
+    padding: 3px;
+    /*	vertical-align: top; */
+}
+
+table.general th {
+    background: #ADCBE6;
+    text-align: left;
+    color: #000;
+    padding: 4px;
+    font-size: 96%;
+    font-weight: bold;
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #000;
+}
+
+table.general th a, table.general th {
+    color: #000;
+    text-decoration: none;
+}
+
+
+table.general .alt_row td {
+    background: #f1f1f1;
+}
